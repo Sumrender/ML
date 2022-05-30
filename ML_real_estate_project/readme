@@ -1,0 +1,9 @@
+Price Prediction Model
+
+Model
+
+- supervised
+- regression
+- batch learning
+
+Using Root Mean Square Error (RMSE) for performance measure

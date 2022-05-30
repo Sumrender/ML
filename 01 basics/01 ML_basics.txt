@@ -1,0 +1,110 @@
+Machine Learning:
+
+Features/Attributes: anything which is able to help distinguish.
+
+A ML algo takes features as input and gives labels as
+output.
+
+ML algo of 2 types:
+
+1. Supervised Learning
+   Machine knows something beforehand
+   Classification and Regression
+
+2. Unsupervised Learning
+   All machine has the data. No features and Labels.
+   Clustering and Association
+
+Steps in a Typical ML problem
+
+1. Problem Identification
+2. Data Collection and Validation
+3. Model Building
+4. Feedback
+
+Linear Regression Model
+
+Multiple Regression Model
+features = independent variables
+labels = dependent variables
+
+explained lineaar regression
+derivation with Mean Square Error and then minima, then finding weights(w0, w1, w2...) and intercepts/biases, and then verifying it with linear regression model on python => refer linear_regression.py and corresponding video
+? find loss function use in linear regression
+
+linear_regression.py
+
+Loss functions and Gradient Descent
+
+Stochastic Gradient Descent: Batch Size=1
+Gradient Descent: Batch Size= full dataset
+Mini Gradient Descent: n-> chosen by the data scientist
+
+? Goldilocks Learning Rate
+
+<!-- ------------------------------------------------- -->
+
+supervised learning CLASSIFICATION:
+(inme se kya hai, dog or car, spam or not, etc.)
+That is, classifying
+
+Here a decision boundary is created
+
+k_nearest_neighbor.py
+
+curly decision boundary is not a good feature since, it works
+on existing data points which the spammer may change by change
+features at his/her end.
+aisa video mai bola
+pr ye cheez to hr case mai valid hai naa?
+
+KNN
+cons:
+less to no focus on training, more on testing
+find distance (euclidean/ etc.)
+slow
+
+pros:
+simple implementation
+
+<!-- ------------------------------------------- -->
+
+OverFitting and UnderFitting
+
+Overfitting: Low Training Error but High Testing error
+Underfitting: High Training Error and High Testing error
+
+Methods of Handling overfitting
+
+1. resampling (selecting random training and testing data)
+2. holding a validation dataset
+   (remove some data from dataset to use for testing later)
+
+<!-- ------------------------------------------- -->
+
+Logistic Regression is a Classifier?
+
+it predicts probability.
+it is an algorithm of generalised linear model class.
+
+sigmoid function.
+something about log of odds,
+diff. values of loss? func for y=0 and y=1
+
+cannot use Mean Square Error in logistic regression,
+as we can get stuck on local minima which are present
+in this data.
+? local minima to linear regression mai bhi to honge naa?
+
+logistic_regression.py
+
+12:00 timestamp on 19 vid
+sigma theta linear to logistic
+
+
+end to end project:
+
+Finding the type of Model to build:
+- is it SUPERVISED, UNSUPERVISED or REINFORCEMENT LEARNING?
+- is it a CLASSIFICATION task or REGRESSION task?
+- is it BATCH LEARNING or ONLINE LEARNING TECHNIQUE?
